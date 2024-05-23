@@ -1,0 +1,24 @@
+div
+{
+    height:300px;
+    width: 300px;
+    border: 1px solid black;
+    float: left;
+}
+#box1
+{
+background-color: blueviolet;
+margin-top:50px;
+margin-left:70px;
+margin-right: 75px;
+color: white;
+padding-left:50px;
+padding-right:50px;
+padding-top:50px;
+height: 250px;
+width: 200px;
+}
+#box2
+{
+    background-color: aqua;
+}

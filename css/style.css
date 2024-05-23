@@ -1,0 +1,45 @@
+.menu
+{
+    display: flex;
+    gap:30px;
+    list-style: none;
+    background-color: rgb(163, 34, 34);           
+}
+li>a
+{          
+height: 100px;
+display: flex;
+color: white;
+text-decoration: none;
+height: 70px;
+align-items: center;
+width: 101px;
+justify-content: center;
+}
+li>a:hover
+{
+    background-color: white;
+    color: black;
+}
+.banner
+{
+    /* background-color: red; */
+    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    height: 350px;
+    background-image: url("../images/bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top
+}
+.banner>h1,.banner>p{
+    color: wheat;
+}
+body
+{
+    background-image: url("../images/rpt.jpg");
+    
+}
