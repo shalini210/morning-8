@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+{height:200px;
+width:200px;
+margin-left:100px;
+margin-top:100px;
+border:2px solid red;
+/* transform: rotate(0deg); */
+animation-name: animate1;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+/* transform: skewX(30deg); */
+/* transform:skewY(30deg) */
+}
+@keyframes animate1 {
+    from{transform: rotate(0deg);width:100px ;
+        height:100px;background-color: yellow;}
+    to{transform: rotate(90deg);width:200px;background-color: red;height:200px}
+}
+.ball
+{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.ball-pool
+{
+    height:500px;
+    width:500px;
+    border:1px solid black;
+    display: flex;
+    gap:66px;
+}
+.b1
+{
+    background-color: yellow;
+    animation: animate2 5s infinite;
+}
+.b2
+{
+    background-color: orange;
+    animation: animate2 2s infinite;
+    animation-delay: 2s;
+}
+.b3
+{
+    background-color: orangered;
+    animation: animate2 2s infinite;
+    animation-delay: 1s;
+}
+@keyframes animate2 {
+        0%{margin-top:0px;}
+      
+        30%{margin-top: 400px;}
+     
+        100%{margin-top: 0px;}
+}
+    </style>
+</head>
+<body>
+    <!-- <div class="box"></div> -->
+    <div class="ball-pool">
+    <div class="ball b1"></div>
+    <div class="ball b2"></div>
+    <div class="ball b3"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            height: 500px;
+            width:500px;
+            border:1px solid black;
+        }
+        .ball
+        {
+            height:50px;width:50px;
+            border-radius: 100%;
+            background-color: rebeccapurple;
+            margin-left:220px;
+            position: relative;
+            animation:ballAnimation 1s infinite;
+            z-index: 1;
+        }
+        .bat
+{
+    background-image: url("images/bat.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    width:300px;
+    height: 200px;
+    margin-top:200px;
+    animation: batanimation 1s infinite;
+}
+@keyframes batanimation 
+{
+    0%{transform:skewY(0deg)}
+    50%{transform:skewY(-30deg);}
+    100%{transform:skewY(0deg);}
+}
+@keyframes ballAnimation {
+        0%{top: 0px;}
+        10%{top: 290px;}
+        100%{top: 0px;}
+}
+    </style>
+ </head>
+ <body>
+    <div class="box">
+        <div class="ball"></div>
+        <div class="bat"></div>
+    </div>
+    
+ </body>
+ </html>
