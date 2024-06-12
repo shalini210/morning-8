@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a,b,c;
+        function Sum()
+        {
+            getvalues()
+            c =a +b;
+            showResult("Sum  is ");
+        }
+        function Sub()
+        {
+            getvalues()
+            c =a-b;
+             showResult("Difference  is ");
+        }
+        function Multi()
+        {
+            getvalues()
+            c =a*b;
+            showResult("Multiplication  is ");
+        }
+        function Division()
+        {
+            getvalues()
+            c =a/b;
+            showResult("Division  is ");
+        }
+        function getvalues()
+        {
+            a = parseInt(document.getElementById("txt1").value);
+             b = parseInt(document.getElementById("txt2").value);
+        }
+        function showResult(msg)
+        {
+            document.getElementById("hresult").innerHTML=msg+c;
+        }
+    </script>
+</head>
+<body>
+    <p>Enter a :
+        <input type="text" id="txt1">
+    </p>
+    <p>Enter b :
+        <input type="text" id="txt2">
+    </p>
+    <input type="button" value="+" onclick="Sum();">
+    <input type="button" value="-" onclick="Sub();">
+    <input type="button" value="X" onclick="Multi();">
+    <input type="button" value="/" onclick="Division();">
+    <h1 id="hresult"></h1>
+</body>
+</html>

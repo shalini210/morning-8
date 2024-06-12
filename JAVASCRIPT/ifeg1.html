@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function chk()
+        {
+            var age = parseInt(document.getElementById("txtage").value);
+            var hresult = document.getElementById("hresult");
+            if(age>17)
+            {
+                hresult.innerHTML="you are eligible to vote";
+            }
+            else
+            {
+                hresult.innerHTML="you are not eligible to vote";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Enter Age:
+        <input type="text" id="txtage">
+    </p>
+    <input type="button" value="Check" onclick="chk();">
+    <h1 id="hresult"></h1>
+</body>
+</html>

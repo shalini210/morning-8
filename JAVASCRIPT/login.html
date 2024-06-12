@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function login()
+        {
+            var username = document.getElementById("txtname").value;
+            var pwd = document.getElementById("txtpwd").value;
+            var msg = "";
+            var colorname = "green";
+            if(username=="Admin"  && pwd=="123")
+            {
+                msg = "welcome";
+            }
+            else
+            {
+                msg = "invalid user";
+                colorname="red";
+            }
+            document.getElementById("hresult").innerHTML=msg;
+            document.getElementById("hresult").style.color= colorname;
+            document.getElementById("hresult").style.backgroundColor= "yellow";
+        }
+    </script>
+</head>
+<body>
+    <p>Enter username : <input type="text" id="txtname"></p>
+    <p>Enter pwd : <input type="text" id="txtpwd"></p>
+    <input type="button" value="Login" onclick="login();">
+    <h1 id="hresult">
+
+    </h1>
+</body>
+</html>

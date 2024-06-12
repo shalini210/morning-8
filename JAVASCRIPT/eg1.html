@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hi(n)
+        {
+var fname = document.getElementById("txtfname").value;
+var lname = document.getElementById("txtlname").value;
+// document.getElementById("txtoutput").value = "Welcome "+fname+" "+lname;
+document.getElementById("houtput").innerHTML = n+fname+" "+lname;
+        }
+    </script>
+</head>
+<body>
+    Enter First name : <input type="text" id="txtfname"/><br>
+    <br>
+    Enter Last Name : <input type="text" id="txtlname">
+    <br>
+    <input type="button" value="hi" onclick="hi('HIII ')">
+    <input type="button" value="hello" onclick="hi('Hello ')">
+    <input type="button" value="welcome" onclick="hi('Welcome ')">
+    <br>
+    <!-- <input type="text" id="txtoutput" disabled> -->
+    <h2 id="houtput">
+
+    </h2>
+</body>
+</html>

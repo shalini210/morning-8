@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeBG()
+        {
+          var clr =  document.getElementById("box").style.backgroundColor;
+          if(clr=="yellow")
+          {
+            document.getElementById("box").style.backgroundColor="white";
+          }
+          else
+          {
+            document.getElementById("box").style.backgroundColor="yellow";
+          }
+        }
+    </script>
+</head>
+<body>
+    <div  onmouseover="changeBG()" id="box" style="height: 100px;width:100px;border:1px solid black">
+CLick HERE
+    </div>
+    
+</body>
+</html>

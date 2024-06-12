@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="button"]
+        {
+            height:40px;width:120px;border:1px double dodgerblue;
+            background-color: white;color:dodgerblue;
+        }
+        input[type="button"]:hover
+        {
+            background-color: dodgerblue;color:white;
+        }
+    </style>
+    <script>
+        function hi()
+        {
+            var n = document.getElementById("txtname").value;
+            document.getElementById("txtoutput").value = "welcome "+ n;           
+        }     
+    </script>
+</head>
+<body>
+    <p>
+        Enter name : <input type="text" id="txtname">
+    </p>
+    <input type="button" value="Click here " onclick="hi()"/>
+ <input type="text" id="txtoutput" disabled>
+</body>
+</html>

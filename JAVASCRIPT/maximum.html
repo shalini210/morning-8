@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function maximum()
+        {
+            var a = parseInt(document.getElementById("txt1").value);
+            var b = parseInt(document.getElementById("txt2").value);
+            var c = parseInt(document.getElementById("txt3").value);
+            var r="";
+            if(a>b)     //means b is not highest 
+            {
+                if(a>c)
+                {
+                    r="A is highest ";
+                }
+                else
+                {
+                    r="c is highest";
+                }
+            }
+            else          //means a is not highest 
+            {
+                if(b>c)
+                {
+                    r = "b is highest";
+                }
+                else
+                {
+                    r= "c is highest";
+                }
+            }
+            document.getElementById("hresult").innerHTML=r;
+        }
+    </script>
+</head>
+<body>
+    <p>a = <input type="text" id="txt1"></p>
+    <p>b = <input type="text" id="txt2"></p>
+    <p>c = <input type="text" id="txt3"></p>
+    <input type="button" value="Show" onclick="maximum();">
+    <h1 id="hresult"></h1>
+</body>
+</html>
